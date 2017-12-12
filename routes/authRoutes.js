@@ -11,4 +11,9 @@ module.exports = (app) => {
   app.get('/api/current_user', (req, res) => {
     res.send(req.user); // we are calling in the user we wanted from Mongo
   });
+  
+  app.get('/api/logout', (req, res) => {
+    req.logout();
+    res.send(req.user); //should have a blank screen on 'api/current...'
+  });
 };
