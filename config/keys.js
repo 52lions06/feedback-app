@@ -2,6 +2,8 @@
 
 if( process.env.NODE_ENV === 'production') {
 // this will determine that our production environment 
+module.exports = require('./prod');
 } else {
 // this will determine our development environment 
+module.exports = require('./dev');
 }
