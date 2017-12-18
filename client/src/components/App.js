@@ -10,7 +10,7 @@ const LandingPage = () => <h2>LandingPage</h2>
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
      <BrowserRouter>
       <div>
         <Header />
