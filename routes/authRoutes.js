@@ -14,7 +14,6 @@ module.exports = (app) => {
     }
     );
 
-  
   app.get('/api/logout', (req, res) => {
     req.logout();
     res.send(req.user); //should have a blank screen on 'api/current...'
