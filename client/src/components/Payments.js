@@ -6,7 +6,7 @@ class Payments extends React.Component {
     return(
       <StripeCheckout
           amount={500}
-          token={ token => console.log(token)}
+          token={ token => console.log(token)} //token is not an actual token its an object of information 
           stripeKey={process.env.REACT_APP_STRIPE_KEY}
           />
     )
