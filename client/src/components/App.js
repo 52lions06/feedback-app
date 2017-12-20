@@ -31,3 +31,5 @@ class App extends React.Component {
 };
 
 export default connect(null, actions) (App);
+
+//brought in the fetchUser action to get User information from the backend
