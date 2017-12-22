@@ -12,7 +12,7 @@ module.exports = app => {
       title, 
       body,
       subject,
-
+      recipients: recipients.split(',').map(email =>  ({email}))
     });
   });
 };
@@ -22,5 +22,7 @@ module.exports = app => {
     // title: title, 
     // body: body,
     // subject: subject,
+    // recipients: recipients.split(',').map( _email => { return {email: _email}})
+
 
 //USING ES6 to refactor it
