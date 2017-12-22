@@ -7,6 +7,7 @@ const keys = require('./config/keys');
 const bodyParser = require('body-parser');
 
 require('./models/User');
+require('./models/Survey');
 require('./services/passport'); //Don't need Const because I am not reusing it
 
 const app = express();
