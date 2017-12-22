@@ -29,6 +29,7 @@ mongoose.connect(keys.mongoURI);
 //exporting a function so only need to call it with "app" to use the routes
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
   // we want Express to be able to access main.js or main.css
