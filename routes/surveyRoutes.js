@@ -12,7 +12,9 @@ module.exports = app => {
       title, 
       body,
       subject,
-      recipients: recipients.split(',').map(email =>  ({email}))
+      recipients: recipients.split(',').map( email =>  ({ email: email.trim() })),
+      _user: req.user.id,
+      dateSent: Date.now()
     });
   });
 };
@@ -26,3 +28,5 @@ module.exports = app => {
 
 
 //USING ES6 to refactor it
+      // recipients is split into and array of strings and then mapped through
+      // we use the .trim to remove white space
