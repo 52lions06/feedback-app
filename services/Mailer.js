@@ -55,4 +55,4 @@ class Mailer extends helper.Mail{
 
 module.exports = Mailer ; 
 
-//not sure to why async send is saything there is a parsing error
+//not sure to why async send is saything there is a parsing error look at ----[line 43]-----
