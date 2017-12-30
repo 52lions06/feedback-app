@@ -25,11 +25,11 @@ class Mailer extends helper.Mail{
 
 // not a lot of info on what is happening, but this is how sendGrid operates
   addClickTracking(){
-    const trackSettings = new helper.TrackSettings();
+    const trackingSettings = new helper.TrackingSettings();
     const clickTracking = new helper.ClickTracking(true, true);
 
-    trackSettings.setClickTracking ( clickTracking );
-    this.addTrackingSettings ( trackSettings );
+    trackingSettings.setClickTracking ( clickTracking );
+    this.addTrackingSettings ( trackingSettings );
   }
 
   addRecipients(){
